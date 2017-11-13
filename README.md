@@ -8,8 +8,8 @@ The Vagrant base box is the official Ubuntu 16.04 (Xenial Xerus) 64-bit box [ava
 
 Prerequisites:
 
-* [VirtualBox](https://www.virtualbox.org/wiki/Downloads). This has been tested with version 5.1.20
-* [Vagrant](https://vagrantup.com/downloads.html). This has been tested using version 1.9.4
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads). This has been tested with version 5.0.40
+* [Vagrant](https://vagrantup.com/downloads.html). This has been tested using version 2.0.0
 
 Clone this repository, then from the repository folder run this command:
 
