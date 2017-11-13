@@ -16,7 +16,7 @@ Vagrant.configure('2') do |config|
     vb.gui = true
     vb.name = 'xfce4-ubuntu'
     vb.memory = 4096
-    vb.cpus = 1
+    vb.cpus = 2
     vb.customize ['modifyvm', :id, '--vram', '256']
     vb.customize ['modifyvm', :id, '--accelerate2dvideo', 'off']
     vb.customize ['modifyvm', :id, '--accelerate3d', 'on']
