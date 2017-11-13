@@ -17,4 +17,6 @@ software-properties-common \
 tar \
 unzip \
 wget \
-zip
+zip \
+terminator \
+subversion
