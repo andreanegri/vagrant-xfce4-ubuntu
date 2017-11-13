@@ -1,7 +1,6 @@
 #!/bin/sh
 sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install \
-build-essential \
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install --fix-missing \
 gcc-4.9 \
 g++-4.9
 

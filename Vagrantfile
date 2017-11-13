@@ -34,7 +34,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision 'shell', privileged: false, path: 'provision/git.sh',   name: 'git.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/xfce4.sh', name: 'xfce4.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/vim.sh',   name: 'vim.sh'
-  config.vm.provision 'shell', privileged: false, path: 'provision/vim.sh',   name: 'compilers.sh'
+  config.vm.provision 'shell', privileged: false, path: 'provision/compilers.sh',   name: 'compilers.sh'
   #config.vm.provision 'shell', privileged: false, path: 'provision/apps.sh', name: 'apps.sh'
   #config.vm.provision 'shell', privileged: false, path: 'provision/google-chrome.sh', name: 'google-chrome.sh'
   #config.vm.provision 'shell', privileged: false, path: 'provision/java.sh', name: 'java.sh'
