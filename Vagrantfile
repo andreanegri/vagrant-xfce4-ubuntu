@@ -40,12 +40,6 @@ Vagrant.configure('2') do |config|
   config.vm.provision 'shell', privileged: false, path: 'provision/google-chrome.sh', name: 'google-chrome.sh'
   #config.vm.provision 'shell', privileged: false, path: 'provision/atom.sh',          name: 'atom.sh'
   #config.vm.provision 'shell', privileged: false, path: 'provision/local.sh',     name: 'local.sh'
-  #config.vm.provision 'shell', privileged: false, path: 'provision/apps.sh', name: 'apps.sh'
-  #config.vm.provision 'shell', privileged: false, path: 'provision/idea.sh', name: 'idea.sh'
-  #config.vm.provision 'shell', privileged: false, path: 'provision/nodejs.sh', name: 'nodejs.sh'
-  #config.vm.provision 'shell', privileged: false, path: 'provision/nvm.sh', name: 'nvm.sh'
-  #config.vm.provision 'shell', privileged: false, path: 'provision/docker.sh', name: 'docker.sh'
-  #config.vm.provision 'shell', privileged: false, path: 'provision/aws.sh', name: 'aws.sh'
 
   config.vm.provision 'file', source: "dotfiles/bashrc", destination: '/tmp/.bashrc'
   config.vm.provision 'file', source: "dotfiles/zshrc",  destination: '/tmp/.zshrc'
