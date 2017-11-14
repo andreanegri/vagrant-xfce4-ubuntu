@@ -7,6 +7,6 @@ cp /tmp/.bashrc $HOME
 sudo cp /tmp/.zshrc $HOME
 
 # copy terminator settings
+mkdir -p $HOME/.config/terminator
 cp /tmp/terminator.config $HOME/.config/terminator/config
 
-rm /tmp/*
