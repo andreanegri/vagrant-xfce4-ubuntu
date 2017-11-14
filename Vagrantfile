@@ -37,7 +37,6 @@ Vagrant.configure('2') do |config|
   config.vm.provision 'shell', privileged: false, path: 'provision/compilers.sh',     name: 'compilers.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/fonts.sh',         name: 'fonts.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/zsh.sh',           name: 'zsh.sh'
-  config.vm.provision 'shell', privileged: false, path: 'provision/spack.sh',         name: 'spack.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/google-chrome.sh', name: 'google-chrome.sh'
   #config.vm.provision 'shell', privileged: false, path: 'provision/atom.sh',          name: 'atom.sh'
   #config.vm.provision 'shell', privileged: false, path: 'provision/local.sh',     name: 'local.sh'
