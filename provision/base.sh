@@ -12,6 +12,7 @@ man-db \
 patch \
 python-apt \
 python-pycurl \
+python-dev \
 sed \
 software-properties-common \
 tar \
@@ -19,4 +20,5 @@ unzip \
 wget \
 zip \
 terminator \
-subversion
+subversion \
+environment-modules

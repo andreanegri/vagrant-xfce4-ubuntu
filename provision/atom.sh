@@ -8,10 +8,10 @@ apm install atom-beautify
 apm install editorconfig
 apm install merge-conflicts
 # JavaScript  packages
-apm install es6-javascript
-apm install language-javascript-jsx
+#apm install es6-javascript
+#apm install language-javascript-jsx
 # Web development packages
-apm install emmet
-apm install pigments
+#apm install emmet
+#apm install pigments
 # Docker packages
-apm install language-docker
+#apm install language-docker
