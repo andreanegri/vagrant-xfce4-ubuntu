@@ -14,7 +14,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.provider 'virtualbox' do |vb|
     vb.gui = true
-    vb.name = 'xfce4-ubuntu'
+    vb.name = 'xfce4-ubuntu-14112017'
     vb.memory = 4096
     vb.cpus = 2
     vb.customize ['modifyvm', :id, '--vram', '256']
@@ -48,6 +48,8 @@ Vagrant.configure('2') do |config|
   #config.vm.provision 'shell', privileged: false, path: 'provision/docker.sh', name: 'docker.sh'
   #config.vm.provision 'shell', privileged: false, path: 'provision/aws.sh', name: 'aws.sh'
 
-  config.vm.provision 'file', source: "dotfiles/bashrc", destination: '~/.bashrc'
-  config.vm.provision 'file', source: "dotfiles/zshrc",  destination: '~/.zshrc'
+  config.vm.provision 'file', source: "dotfiles/bashrc", destination: '/tmp/.bashrc'
+  config.vm.provision 'file', source: "dotfiles/zshrc",  destination: '/tmp/.zshrc'
+
+  config.vm.provision 'shell', privileged: false, path: 'provision/configuration.sh', name: 'configuration.sh'
 end
