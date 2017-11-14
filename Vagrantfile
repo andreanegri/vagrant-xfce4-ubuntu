@@ -14,7 +14,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.provider 'virtualbox' do |vb|
     vb.gui = true
-    vb.name = 'xfce4-ubuntu-14112017'
+    vb.name = 'devbox-ubuntu-xfce'
     vb.memory = 4096
     vb.cpus = 2
     vb.customize ['modifyvm', :id, '--vram', '256']
