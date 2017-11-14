@@ -6,8 +6,7 @@ cp /tmp/.bashrc $HOME
 # copy zsh configuration
 sudo cp /tmp/.zshrc $HOME
 
-rm /tmp/.bashrc
-rm /tmp/.zshrc
+# copy terminator settings
+cp /tmp/terminator.config $HOME/.config/terminator/config
 
-# set zsh as default shell
-sudo chsh -s $(which zsh)
+rm /tmp/*

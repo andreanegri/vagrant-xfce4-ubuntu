@@ -50,6 +50,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.provision 'file', source: "dotfiles/bashrc", destination: '/tmp/.bashrc'
   config.vm.provision 'file', source: "dotfiles/zshrc",  destination: '/tmp/.zshrc'
+  config.vm.provision 'file', source: "config/terminator.config",  destination: '/tmp/terminator.config'
 
   config.vm.provision 'shell', privileged: false, path: 'provision/configuration.sh', name: 'configuration.sh'
 end
