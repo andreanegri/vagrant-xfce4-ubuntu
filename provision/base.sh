@@ -21,4 +21,5 @@ wget \
 zip \
 terminator \
 subversion \
-environment-modules
+environment-modules \
+mesa-common-dev
