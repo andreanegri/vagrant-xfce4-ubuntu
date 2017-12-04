@@ -22,4 +22,5 @@ zip \
 terminator \
 subversion \
 environment-modules \
-mesa-common-dev
+mesa-common-dev \
+tree
