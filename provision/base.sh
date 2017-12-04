@@ -23,4 +23,5 @@ terminator \
 subversion \
 environment-modules \
 mesa-common-dev \
-tree
+tree \
+pkg-config
