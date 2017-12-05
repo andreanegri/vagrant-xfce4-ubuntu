@@ -24,4 +24,5 @@ subversion \
 environment-modules \
 mesa-common-dev \
 tree \
-pkg-config
+pkg-config \
+shellcheck
