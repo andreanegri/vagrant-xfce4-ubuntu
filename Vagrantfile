@@ -14,7 +14,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.provider 'virtualbox' do |vb|
     vb.gui = true
-    vb.name = 'devbox-ubuntu-xfce'
+    #vb.name = 'devbox-ubuntu-xfce'
     vb.memory = 4096
     vb.cpus = 2
     vb.customize ['modifyvm', :id, '--vram', '256']
@@ -39,11 +39,9 @@ Vagrant.configure('2') do |config|
   config.vm.provision 'shell', privileged: false, path: 'provision/zsh.sh',           name: 'zsh.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/google-chrome.sh', name: 'google-chrome.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/local.sh',         name: 'local.sh'
-    #config.vm.provision 'shell', privileged: false, path: 'provision/atom.sh',          name: 'atom.sh'
+  config.vm.provision 'shell', privileged: false, path: 'provision/configuration.sh', name: 'configuration.sh'
 
   config.vm.provision 'file', source: "dotfiles/bashrc", destination: '/tmp/.bashrc'
   config.vm.provision 'file', source: "dotfiles/zshrc",  destination: '/tmp/.zshrc'
   config.vm.provision 'file', source: "config/terminator.config",  destination: '/tmp/terminator.config'
-
-  config.vm.provision 'shell', privileged: false, path: 'provision/configuration.sh', name: 'configuration.sh'
 end
