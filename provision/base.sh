@@ -25,4 +25,5 @@ environment-modules \
 mesa-common-dev \
 tree \
 pkg-config \
-shellcheck
+shellcheck \
+gparted
