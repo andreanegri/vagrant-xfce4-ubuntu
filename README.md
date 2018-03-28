@@ -13,9 +13,18 @@ Prerequisites:
 
 Clone this repository, then from the repository folder run this command:
 
-    vagrant up && vagrant reload
+    vagrant up
 
-The `ubuntu` user password is `ubuntu`.
+    # login on VM
+    vagrant ssh
+
+    # change ubuntu user password
+    sudo passwd ubuntu
+ 
+    exit
+
+    vagrant reload
+
 
 ## Notes
 
