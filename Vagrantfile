@@ -14,8 +14,8 @@ Vagrant.configure('2') do |config|
 
   config.vm.provider 'virtualbox' do |vb|
     vb.gui = true
-    #vb.name = 'devbox-ubuntu-xfce'
-    vb.memory = 4096
+    #vb.name = 'devbox-zesty64'
+    vb.memory = 3072
     vb.cpus = 2
     vb.customize ['modifyvm', :id, '--vram', '256']
     vb.customize ['modifyvm', :id, '--accelerate2dvideo', 'off']
@@ -23,7 +23,6 @@ Vagrant.configure('2') do |config|
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
     vb.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
-    # vb.customize ['setextradata', :id, 'GUI/HiDPI/UnscaledOutput', '1']
   end
 
   # Copy private key to VM for Git and other tools
